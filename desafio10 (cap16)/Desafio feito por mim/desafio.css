@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family:"Minha Fonte" ;
+    src: url("idroid.otf");
+}
+
+:root{
+    --cor01:#c5ebd6;
+    --cor01: #83e1ad;
+    --cor02: #3ddc84;
+    --cor03: #2fa866;
+    --cor04: #1a5c37;
+    --cor05: #063d1e;
+
+    --font-padrao: Arial, Verdana,Sans-serif;
+    --font-android: "Minha Fonte";
+    --font-destaque: 'Bebas Neue', sans-serif
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    /* Essas confirgurações globais serviram para ajustar a distancia entre as caixas do meu site, ou seja não há distância entre as caixas*/
+}
+
+body{
+    background-color: #3DD973;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: -8px;
+    min-height: 83px;
+}
+
+header > h1{
+    font-family: "Bebas Neue", sans-serif;
+   font-size: 4em;
+   color: white;
+   text-shadow: 2px 2px 0px black;
+}
+
+header > p{
+    color: white;
+    font-size: 1.5em;
+}
+
+nav{
+background-color: var(--cor05);
+padding: 10px;
+box-shadow: 0px 7px 5px black;
+}
+
+nav > a{
+    color: white;
+    text-decoration: none; /* Usa para estilizar os links, mais detalhes no meu resumo*/
+    font-weight: bold;
+    padding: 10px; /* este padding ajudou a espaçar os links*/
+}
+ 
+nav > a:hover{
+    color: var(--cor02);
+}
+
+main{
+    min-width: 320px;
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0px 0px 0px 1px;
+    background-color: white;
+    }
+
+    h1#titulo{
+        font-family: "Minha Fonte";
+        color: #22733F;
+    }
+
+    main  p{ /* Não coloco o " > " pq existem vários parágrafos e não apenas um*/
+        font-family: var(--font-padrao);
+        text-align: justify;
+        text-indent: 30px; /* para dar o parágrafo*/
+        line-height: 2em; /* Comando que serve para aumentar o distanciamento das linhas, muito útil para a leitura*/
+        
+    }
+
+    h2{
+        font-family: "Minha Fonte";
+        color: #22733F;
+        background-color: #3DD973;
+    }
+
+    aside{
+        background-color: var(--cor02);
+        margin: 8px;
+        padding: 20px;
+        border: solid var(--cor01);
+        border-radius: 10px;
+        box-shadow: 3px 3px 8px black;
+    }
+
+    aside> h3{
+        background-color: var(--cor03);
+        color: white;
+        font-family: var(--font-padrao);
+        text-align: left;
+        padding: 10px;
+        border-radius: 10px 10px 0px 0px;
+        margin: -10px -10px 0px -10px;
+    }
+
+    aside > ul{
+        columns: 2; /* Serve para dividir uma lista em 2 colunas*/
+        list-style-position: inside; /* Serve para colocar a lista dentro da caixa*/
+    }
+
+    footer{
+        text-align: center;
+        background-color:#1B5936;
+        padding: 0px;
+        margin: 10px 1px 1px 1px;
+    }
