@@ -31,7 +31,7 @@
     font-family: var(--font-poema);
     line-height: 2em; /* Essa tag serve para aumentar a distância entre as linhas do poema e sua métrica é feita em "em" */
     font-size: 3.5em;
-    min-width: 320px;
+    min-width: 600px;
     max-width: 1850px;
   }
   div#box1{
