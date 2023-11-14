@@ -40,6 +40,7 @@
   div#box2{
     background-image: url(imagens/background001.jpg);
     background-position: center center; /* Essa tag define de qual lado a imagem começará, se da esquerda para direita, direita para esquerda, etc... */
+    background-size: cover; /* Esta tag faz com que toda a imagem fique exposta sem corte */
     background-attachment: fixed; /* Essa tag permite que voce role o conteúdo para cima e para baixo e apareça toda a imagem, criando um efeito paralax */
     padding: 60px;
   }
@@ -57,6 +58,7 @@
   div#box4{
     background-image: url(imagens/background002.jpg);
     background-position: left right;
+    background-size: cover;
     background-attachment: fixed;
     padding: 60px;
   }
