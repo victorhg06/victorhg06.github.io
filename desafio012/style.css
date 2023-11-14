@@ -1,0 +1,85 @@
+@charset "UTF-8";
+  @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+  :root{ /* Criar uma variável em CSS para chamar fontes ou cores que usarei durante o projeto */
+    --font-titulo: 'Passion One',sans-serif;
+    --font-poema: 'Sriracha', sans-serif;
+    --font-padrao: Arial Verdana Helvetica sans-serif
+  }
+  *{  /* Essa é uma configuração global para tirar as partes brancas ao redor da caixa de conteúdo */
+    margin: 0px; 
+    padding: 0px;
+    min-width: 320px;  /* Essas configurações servem para que o site possa se adaptar a telas menores e maiores, como de celulares e tablets */
+    max-width: 800px;
+  }
+  header{
+    background-color: black;
+    padding: 40px;
+  }
+  header > h1{
+    font-family: var(--font-titulo);
+    font-size: 9em;
+    letter-spacing: 5px; /* Tag usada para aumentar a distância entre palavras de uma letra */
+    text-align: center;
+    color: white;
+  }
+  header > p{
+    font-family: var(--font-padrao);
+    text-align: center;
+    color: white;
+    font-size: 2em;
+  }
+  div.principal{
+    font-family: var(--font-poema);
+    line-height: 2em; /* Essa tag serve para aumentar a distância entre as linhas do poema e sua métrica é feita em "em" */
+    font-size: 3.5em;
+  }
+  div#box1{
+    padding: 60px;
+  }
+  div#box2{
+    background-image: url(imagens/background001.jpg);
+    background-position: center center; /* Essa tag define de qual lado a imagem começará, se da esquerda para direita, direita para esquerda, etc... */
+    background-attachment: fixed; /* Essa tag permite que voce role o conteúdo para cima e para baixo e apareça toda a imagem, criando um efeito paralax */
+    padding: 60px;
+  }
+  div#box2 > p{
+    display: inline-block;/* Essa tag serviu para embutir a caixa do texto em um espaço menor e com isso eu posso mexer em seu padding/margin dentro desse tamanho embutido */
+    padding: 10px;
+    background-color: rgba(0, 0,0,0.514);
+    border: 2px solid black;
+    color: white;
+    border-radius: 5px;
+  }
+  div#box3{
+    padding: 50px;
+  }
+  div#box4{
+    background-image: url(imagens/background002.jpg);
+    background-position: left right;
+    background-attachment: fixed;
+    padding: 60px;
+  }
+  div#box4 > p{
+    color: white;
+    display: inline-block;
+    background-color: rgba(0, 0,0,0.514);
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  div#box5{
+    padding: 50px;
+  }
+  footer{
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    padding: 20px;
+  }
+  footer >p >a:hover{
+    
+    background-color: white;
+  }
