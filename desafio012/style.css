@@ -10,7 +10,7 @@
     margin: 0px; 
     padding: 0px;
     min-width: 320px;  /* Essas configurações servem para que o site possa se adaptar a telas menores e maiores, como de celulares e tablets */
-    max-width: 800px;
+    max-width: 1050px;
   }
   header{
     background-color: black;
