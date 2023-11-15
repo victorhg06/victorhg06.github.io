@@ -21,6 +21,7 @@
   header > h1{
     font-family: var(--font-titulo);
     font-size: 9em;
+    font-variant: small-caps; /* Essa tag faz com que todas as letras fiquem maiúsculas, porém as primeiras letras de cada palavra ficam maiores que as outras */
     letter-spacing: 5px; /* Tag usada para aumentar a distância entre palavras de uma letra */
     text-align: center;
     color: white;
@@ -30,6 +31,14 @@
     text-align: center;
     color: white;
     font-size: 2em;
+  }
+  a{
+    color: white;
+    text-decoration: none; /* Essa tag faz com que eu tire o sublinhado do meu link que fica automaticamente */
+    font-weight: bolder;
+  }
+  a:hover{
+    background-color: rgba(0, 128, 0, 0.153);
   }
   div.principal{
     font-family: var(--font-poema);
@@ -86,8 +95,4 @@
     padding: 20px;
     min-width: 600px;
     max-width: 1850px;
-  }
-  footer >p >a:hover{
-    
-    background-color: white;
   }
