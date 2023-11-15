@@ -9,13 +9,13 @@
   *{  /* Essa é uma configuração global para tirar as partes brancas ao redor da caixa de conteúdo */
     margin: 0px; 
     padding: 0px;
-    min-width: 600px;
+    min-width: 380px;
     max-width: 1850px;
   }
   header{
     background-color: black;
     padding: 40px;
-    min-width: 600px;
+    min-width: 380px;
     max-width: 1850px;
   }
   header > h1{
@@ -44,7 +44,7 @@
     font-family: var(--font-poema);
     line-height: 2em; /* Essa tag serve para aumentar a distância entre as linhas do poema e sua métrica é feita em "em" */
     font-size: 3.5em;
-    min-width: 600px;
+    min-width: 380px;
     max-width: 1850px;
   }
   div#box1{
@@ -94,6 +94,6 @@
     text-align: center;
     font-weight: bolder;
     padding: 20px;
-    min-width: 600px;
+    min-width: 380px;
     max-width: 1850px;
   }
