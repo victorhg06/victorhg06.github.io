@@ -20,7 +20,7 @@
   }
   header > h1{
     font-family: var(--font-titulo);
-    font-size: 9em;
+    font-size: 10vw; /* Aqui foi feito a configuração em "vw" que significa que a largura ficará em 10% da minha tela */
     font-variant: small-caps; /* Essa tag faz com que todas as letras fiquem maiúsculas, porém as primeiras letras de cada palavra ficam maiores que as outras */
     letter-spacing: 5px; /* Tag usada para aumentar a distância entre palavras de uma letra */
     text-align: center;
@@ -90,6 +90,7 @@
     display: block;
     background-color: black;
     color: white;
+    font-size: 1vw;
     text-align: center;
     font-weight: bolder;
     padding: 20px;
