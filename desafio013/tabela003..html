@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas de Filmes</title>
+    <style>
+        caption{
+            font-size: 2em;
+            color: black;
+            font-weight: bold;
+        }
+        table{
+            border-collapse: separate;
+            padding: 8px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <Caption>Preferência de Filmes</Caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col" colspan="3">Nomes</th>
+                <th scope="col" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td colspan="3">Ana Maria dos Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td colspan="3">Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td colspan="3">Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td colspan="3">Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td colspan="3">Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Old Boy</td>
+                <td>Django</td>
+            </tr>
+            <tr>
+                <td colspan="3">Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Store</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
