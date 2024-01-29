@@ -3,4 +3,5 @@
 body{
     background-image: url(../imagens/cev-landscape.jpg);
     background-position: left bottom; /* Config usada para que a orientação inicie da esquerda para cima, isso ajuda a melhorar a visualização*/
+    background-color: #233eff;
 }
