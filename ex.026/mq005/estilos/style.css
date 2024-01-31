@@ -19,8 +19,22 @@ header > h1{
     text-align: center;
 }
 
-menu{
+span#burger{
+    background-color: rgb(49, 49, 49);
+    color: white;
     display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer; /* Essa tag serve para que o mouse ao passar pelo link vire uma "mãozinha"*/
+}
+
+span#burger:hover{
+    background-color: white;
+    color: black;
+}
+
+menu{
+    display: none; /* Essa tag desaparece com as opções e deixa apenas o "hamburguer"*/
 }
 
 menu > ul{
@@ -59,3 +73,4 @@ article > p{
     margin-bottom: 10px;
     text-indent: 20px;
 }
+
