@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* Aqui criaremos as configurações para telas maiores, então para telas maiores que 780px nós não deixaremos ativo a opção do "hamburguer" do menu*/
+
+@media screen and (min-width: 780px) {
+    span#burger{
+        display: none;  /* Config usada para que o "hamburger menu" suma*/
+    }
+
+    menu {
+        display: block; /* Agora essa opção faz com que meu menu apareça sem o "hamburguer"*/ /*OBS.: Se eu deixar o menu hamburguer escondido e aumentar a tela do meu dispositivo as opçoes irão sumir, para resolver isso vamos usar JS*/
+    }
+
+    menu > ul > li{
+        display: inline-block; /* Config para deixar as opções uma ao lado da outra*/
+    }
+
+    main{
+        width: 768px; /* Travar o conteúdo em um tamanho de tela*/
+    }
+
+}
