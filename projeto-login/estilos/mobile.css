@@ -7,12 +7,12 @@
 #260101 
 */
 :root{
-    --corformulario: white;
-    --corexterna: #efcf4490;
-    --cor02: #A68160;
-    --cor03: #731702;
-    --cor04: #BF3C1F;
-    --cor05: #260101;
+    --corformulario: #f8f8f8;
+    --corexterna: #a6e0d8c5;
+    --cor02: #2A5CBF;
+    --cor03: #168BF2;
+    --cor04: #062A40;
+    --cor05: #1BA0F2;
 }
 *{
     margin: 0px;
@@ -30,6 +30,7 @@ main{
     width: 100vw;  /* Essas duas configurações deixam o main ocupando a tela toda*/
     height: 100vh;
     position: relative; /* Essa tag é para que o main seja visto como um "pai" das outras caixas que ficarão dentro do main e com isso essas caixas se posicionem de um modo absoluto em relação ao main*/
+    background-image: linear-gradient(to right, var(--corexterna), var(--cor03), var(--cor02));
 }
 
 section#login{
@@ -44,15 +45,28 @@ section#login{
     transform: translate(-50%, -50%);
 }
 
-section#login > p#imagem{
-    height: 50vh;
-    background-image: url(../imagens/pq.jpg);
+section#login > div#imagem{
+    height: 40vh;
+    background-image: url(../imagens/entrada.jpg);
     background-size:cover ; /* tag cobre o espaço selecionado com toda a imagem selecionada*/
     display: block;
     background-position: center bottom; /* Altera a centralização da imagem*/
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-p#formulario{
-    
+section#login > div#formulario{
+    height: 52vh;
+    background-color: var(--corformulario);
+    border-bottom-left-radius: 10px;  /*Essas duas config são para que apenas a parte selecionada (left e right) arredondem*/
+    border-bottom-right-radius: 10px;
+}
+
+div#formulario > h1{
+    text-align: center;
+    padding: 10px;
+}
+
+div#formulario > p{
+    text-align: center;
 }
