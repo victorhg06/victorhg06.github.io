@@ -58,7 +58,7 @@ section#login > div#imagem{
 }
 
 section#login > div#formulario{
-    height: 50vh;
+    height: 30vh;
     background-color: var(--corformulario);
     border-bottom-left-radius: 10px;  /*Essas duas config são para que apenas a parte selecionada (left e right) arredondem*/
     border-bottom-right-radius: 10px;
@@ -71,4 +71,20 @@ div#formulario > h1{
 
 div#formulario > p{
     text-align: center;
+}
+
+p#email{
+    padding: 10px;
+    background-color: rgba(128, 0, 128, 0.753);
+    
+}
+
+label#cara{
+    align-items: baseline;
+}
+
+input#iemail{
+    padding: 10px;
+    border-radius: 5px;
+    
 }
