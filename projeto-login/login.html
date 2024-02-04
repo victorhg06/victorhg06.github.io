@@ -18,10 +18,13 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder desfrutar do ambiente</p>
 
-                <form action="" method="post">
-                    <p>Nome: <input type="text" name="" id=""></p>
-                    <p>Senha: <input type="text" name="" id=""></p>
-                    <input type="submit" value="Entrar">
+                <form action="cadastro.php" method="post" autocomplete="on">
+                    <p><label for="iemail">Nome:</label> <input type="email" name="email" id="iemail" placeholder="Seu e-mail" required></p>
+                    <p><label for="ipassword">Senha:</label> <input type="password" name="password" id="ipassword" placeholder="Sua Senha" required minlength="8" maxlength="12"></p>
+                    <p>
+                        <input id="entrar" type="submit" value="Entrar"> <br>
+                        <input type="reset" value="Esqueci a Senha">
+                    </p>
                 </form>
             </div>
         </section>

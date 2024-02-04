@@ -35,7 +35,7 @@ main{
 
 section#login{
     width: 250px;
-    height: 500px;
+    height: 300px;
     border: 2px solid rgba(0, 0, 0, 0.574);
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(4, 4, 4, 0.856);
@@ -46,7 +46,7 @@ section#login{
 }
 
 section#login > div#imagem{
-    height: 200px;
+    height: 100px;
     background-image: url(../imagens/entrada.jpg);
     background-size:cover ; /* tag cobre o espaço selecionado com toda a imagem selecionada*/
     display: block;
@@ -56,7 +56,7 @@ section#login > div#imagem{
 }
 
 section#login > div#formulario{
-    height: 300px;
+    height: 200px;
     background-color: var(--corformulario);
     border-bottom-left-radius: 10px;  /*Essas duas config são para que apenas a parte selecionada (left e right) arredondem*/
     border-bottom-right-radius: 10px;
