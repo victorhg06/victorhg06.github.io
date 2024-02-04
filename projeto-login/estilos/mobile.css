@@ -48,7 +48,7 @@ section#login{
 }
 
 section#login > div#imagem{
-    height: 100px;
+    height: 150px;
     background-image: url(../imagens/entrada.jpg);
     background-size:cover; /* tag cobre o espaço selecionado com toda a imagem selecionada*/
     display:block;
