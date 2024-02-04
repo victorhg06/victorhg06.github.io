@@ -6,3 +6,53 @@
 #BF3C1F
 #260101 
 */
+:root{
+    --corformulario: white;
+    --corexterna: #efcf4490;
+    --cor02: #A68160;
+    --cor03: #731702;
+    --cor04: #BF3C1F;
+    --cor05: #260101;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--corexterna);
+}
+
+main{
+    width: 100vw;  /* Essas duas configurações deixam o main ocupando a tela toda*/
+    height: 100vh;
+    position: relative; /* Essa tag é para que o main seja visto como um "pai" das outras caixas que ficarão dentro do main e com isso essas caixas se posicionem de um modo absoluto em relação ao main*/
+}
+
+section#login{
+    width: 250px;
+    height: 500px;
+    border: 2px solid rgba(0, 0, 0, 0.574);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(4, 4, 4, 0.856);
+    position: absolute;
+    top: 50%; /* Desce a caixa 50% abaixo*/
+    left: 50%; /* Desloca a caixa para a esquerda*/
+    transform: translate(-50%, -50%);
+}
+
+section#login > p#imagem{
+    height: 50vh;
+    background-image: url(../imagens/pq.jpg);
+    background-size:cover ; /* tag cobre o espaço selecionado com toda a imagem selecionada*/
+    display: block;
+    background-position: center bottom; /* Altera a centralização da imagem*/
+    border-radius: 10px;
+}
+
+p#formulario{
+    
+}
