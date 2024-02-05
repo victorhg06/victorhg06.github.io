@@ -1,6 +1,24 @@
 @charset "UTF-8";
 
 @media screen and (min-width:769px) {
-    
+    section#login{
+        width: 70vw;
+        height: 60%;
+    }
+
+    section#login > div#imagem{
+        float: right;
+        width: 50%;
+        height: 100%;
+        border-top-left-radius:0px ;
+        border-bottom-left-radius:0px ;
+    }
+
+    section#login > div#formulario{
+        float: left;
+        width: 50%;
+        height: 100%;
+        border-bottom-right-radius: 0px;
+    }
     }
 }
