@@ -19,7 +19,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body{
@@ -45,6 +45,7 @@ section#login{
     top: 50%; /* Desce a caixa 50% abaixo*/
     left: 50%; /* Desloca a caixa para a esquerda*/
     transform: translate(-50%, -50%);
+    overflow: hidden; /* Essa tag esconde tudo que está fora da borda externa dentro dela*/
 }
 
 section#login > div#imagem{
