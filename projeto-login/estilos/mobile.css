@@ -76,6 +76,8 @@ div#formulario > p{
 }
 
 p#email{
+    display: block; /* Posiciona o botão em uma linha só*/
+    width: 95%; /* Faz ele ocupar 100% da largura do conteiner, não pode ser vw pq ocuparia para fora também*/
     padding: 8px;
     margin: 2px;
     background-color: rgba(128, 0, 128, 0.753);
@@ -93,6 +95,8 @@ input#iemail{
 }
 
 p#senha{
+    display: block;
+    width: 95%;
     padding: 8px;
     margin: 2px;
     background-color: rgba(128, 0, 128, 0.753);
@@ -109,15 +113,15 @@ input#senha{
     width: 70%;
 }
 
-p#entrar{
-    padding: 8px;
+form > p#entrar > input#entrar{
+    display: block; /* Essa tag faz com que o botão fique em uma linha sozinho e não ao lado, evitando o uso do "br"*/
     margin: 2px;
-    background-color: #53aaa7;
-    border-radius: 10px;
-    cursor: pointer; /* Coloca a mãozinha ao passar por cima da opção*/
-    text-align: center;
-    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color:#53aaa7 ;
     border: none;
+    border-radius: 10px;
 }
 p#entrar:hover{
     background-color:rgba(0, 0, 255, 0.504) ;
@@ -127,15 +131,15 @@ p#entrar > input#entrar{
     cursor: pointer;
 }
 
-p#dados{
-    padding: 8px;
+form > p#dados > input#dados{
+    display: block; /* Essa tag faz com que o botão fique em uma linha sozinho e não ao lado, evitando o uso do "br"*/
     margin: 2px;
-    background-color: #53aaa7;
-    border-radius: 10px;
-    cursor: pointer; /* Coloca a mãozinha ao passar por cima da opção*/
-    text-align: center;
-    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color:#53aaa7 ;
     border: none;
+    border-radius: 10px;
 }
 
 p#dados:hover{
