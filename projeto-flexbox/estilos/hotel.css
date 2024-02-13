@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: "Minha";
+    src: url(../fontes/Pacifico-Regular.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    font-family: "Minha", sans-serif;
+    box-sizing: border-box;
+}
+
+nav, ul{
+    list-style: none; /* Aqui eu tiro a bolinha dos itens*/
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover{
+    opacity: 1.0;
+}
+
+header{
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;  /* Config padrão para Flexbox*/
+    justify-content: space-between; /*Cria um espaço entre os elementos*/
+    align-items: center; /* alinha o menu ao centro*/
+    padding: 20px 50px;
+}
+
+header img{
+    width: 400px; /* Para alterar a largura da logo*/
+}
+
+header nav{
+    display: flex;
+}
+
+header li{
+    margin: 0px 15px;
+}
+
+header li:first-child{
+    margin-left: 0px; /*Aqui eu tiro a margin esquerda do primeiro filho(Home)*/
+}
+
+header li:last-child{
+    margin-right: 0px;
+}
+
+header li a{
+    color: #191c03;
+}
+
+@media (max-width: 700px){ /*Aqui eu digo que quando a tela do dispositivo for de até 700 px deve haver algumas alterações*/
+    header{
+        flex-direction: column; /*Quando a tela for de até 700px o menu de navegação deverá estar no modo de coluna*/
+    }
+}
+
+/*Hero*/
+.hero{
+    background-image: url(../imagens/hero.jpg);
+    background-color: #fff;
+    background-size: cover;
+    min-height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+
+.hero h3{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.hero .btn{
+    background-color: #fff;
+    border-radius: 4px;
+    color: #191c03;
+    padding: 20px 50px;
+    text-transform: uppercase;
+}
+
+.hero > h1,h3{
+    color: white;
+}
+@media (max-width: 700px){ /*Aqui eu digo que quando a tela do dispositivo for de até 700 px deve haver algumas alterações*/
+    .hero h1{
+        font-size:2rem ;
+        margin: 0px;
+    }
+    .hero h3{
+        font-size: 1rem;
+    }
+}
