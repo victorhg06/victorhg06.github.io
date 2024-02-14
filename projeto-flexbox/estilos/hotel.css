@@ -36,7 +36,7 @@ header{
     display: flex;  /* Config padrão para Flexbox*/
     justify-content: space-between; /*Cria um espaço entre os elementos*/
     align-items: center; /* alinha o menu ao centro*/
-    padding: 10px 50px;
+    padding: 5px 50px;
 }
 
 header img{
